@@ -48,6 +48,7 @@
                 }
             </style>
 			<?php the_custom_logo(); ?>
+            <span><?php echo get_bloginfo( 'name' ); ?></span>
         </h2>
 
         <nav>
