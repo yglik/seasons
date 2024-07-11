@@ -40,6 +40,13 @@
 	if ( ! empty( $pages ) ) :?>
 
         <h2>
+            <!--suppress CssUnusedSymbol -->
+            <style>
+                .custom-logo {
+                    width: 100px;
+                    height: 100px;
+                }
+            </style>
 			<?php the_custom_logo(); ?>
         </h2>
 
