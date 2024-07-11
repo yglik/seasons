@@ -74,7 +74,7 @@
             הזכויות שמורות.
         </p>
         <p>
-            האתר משתמש בתבנית <strong><?php echo esc_html( __( get_stylesheet(), 'seasons-classic' ) ); ?></strong>.
+            האתר משתמש בתבנית <strong><?php echo esc_html( __( get_stylesheet(), 'seasons' ) ); ?></strong>.
         </p>
     </div>
     <div lang="en" dir="ltr">
