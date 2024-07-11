@@ -66,7 +66,9 @@
 </main>
 
 <footer>
+
     <hr>
+
     <p>
         דף זה נוצר בתאריך:
         <span class="modified-date">
@@ -77,7 +79,9 @@
 		    <?php the_modified_date( get_option( 'date_format' ) ); ?>
         </span>
     </p>
+
     <hr>
+
     <div>
         <p>
             מונע בגאווה על ידי <a href="https://wordpress.org/">וורדפרס</a>
@@ -89,6 +93,7 @@
             האתר משתמש בתבנית <strong><?php echo esc_html( __( get_stylesheet(), 'seasons' ) ); ?></strong>.
         </p>
     </div>
+
     <div lang="en" dir="ltr">
         <p>
             Proudly powered by <a href="https://wordpress.org/">WordPress</a>.
@@ -100,6 +105,7 @@
             Current theme is <strong><?php echo esc_html( get_stylesheet() ); ?></strong>
         </p>
     </div>
+
 </footer>
 
 </body>
