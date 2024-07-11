@@ -66,6 +66,18 @@
 </main>
 
 <footer>
+    <hr>
+    <p>
+        דף זה נוצר בתאריך:
+        <span class="modified-date">
+            <?php the_date(); ?>
+        </span>
+        ונערך לאחרונה בתאריך:
+        <span class="created-date">
+		    <?php the_modified_date( get_option( 'date_format' ) ); ?>
+        </span>
+    </p>
+    <hr>
     <div>
         <p>
             מונע בגאווה על ידי <a href="https://wordpress.org/">וורדפרס</a>
