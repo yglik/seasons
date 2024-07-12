@@ -28,6 +28,17 @@
 
     </title>
 
+    <style>
+        html {
+            font-family: system-ui;
+        }
+
+        p {
+            max-width: 60ch;
+            line-height: 1.5;
+        }
+    </style>
+
 </head>
 
 <body>
