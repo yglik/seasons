@@ -39,17 +39,9 @@
 	$pages = get_pages();
 	if ( ! empty( $pages ) ) :?>
 
-        <h2>
-            <!--suppress CssUnusedSymbol -->
-            <style>
-                .custom-logo {
-                    width: 100px;
-                    height: 100px;
-                }
-            </style>
-			<?php the_custom_logo(); ?>
-            <span><?php echo get_bloginfo( 'name' ); ?></span>
-        </h2>
+        <h2><?php echo get_bloginfo( 'name' ); ?></h2>
+    
+        <p><?php echo get_bloginfo( 'description' ); ?></p>
 
         <nav>
 
