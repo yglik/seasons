@@ -21,7 +21,7 @@
 		<?php
 
 		the_title();
-		echo ' | ';
+		echo ' &bullet; ';
 		bloginfo( 'name' );
 
 		?>
@@ -40,7 +40,7 @@
 	if ( ! empty( $pages ) ) :?>
 
         <h2><?php echo get_bloginfo( 'name' ); ?></h2>
-    
+
         <p><?php echo get_bloginfo( 'description' ); ?></p>
 
         <nav>
