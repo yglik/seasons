@@ -52,17 +52,20 @@
         </h2>
 
         <nav>
-            <ul>
-				<?php foreach ( $pages as $page ) : ?>
 
-                    <li>
-                        <a href="<?php echo get_page_link( $page->ID ); ?>">
-							<?php echo $page->post_title; ?>
-                        </a>
-                    </li>
+			<?php foreach ( $pages as $key => $page ) : ?>
 
-				<?php endforeach; ?>
-            </ul>
+				<?php if ( 0 !== $key && $key < count( $pages ) ) : ?>
+                    <span>&bullet;</span>
+				<?php endif ?>
+
+                <a href="<?php echo get_page_link( $page->ID ); ?>">
+					<?php echo $page->post_title; ?>
+                </a>
+
+
+			<?php endforeach; ?>
+
         </nav>
 
 	<?php endif; ?>
