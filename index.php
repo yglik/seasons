@@ -39,9 +39,9 @@
 	$pages = get_pages();
 	if ( ! empty( $pages ) ) :?>
 
-        <h2><?php echo get_bloginfo( 'name' ); ?></h2>
+        <h2><?php bloginfo( 'name' ); ?></h2>
 
-        <p><?php echo get_bloginfo( 'description' ); ?></p>
+        <p><?php bloginfo( 'description' ); ?></p>
 
         <nav>
 
