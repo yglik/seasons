@@ -78,6 +78,10 @@
             }
         }
 
+        li + li {
+            margin-block-start: 0.5rem;
+        }
+
     </style>
 
 </head>
