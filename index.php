@@ -145,7 +145,7 @@
             הזכויות שמורות.
         </p>
         <p>
-            האתר משתמש בתבנית <strong><?php echo esc_html( __( get_stylesheet(), 'seasons' ) ); ?></strong>.
+            האתר משתמש בתבנית <strong><?php echo esc_html( __( ucfirst( get_stylesheet() ), 'seasons' ) ); ?></strong>.
         </p>
     </div>
 
@@ -157,7 +157,7 @@
             All contents of this site, unless otherwise noted, are ©2023-2024 Yochai and Adi Glik. All Rights Reserved.
         </p>
         <p>
-            Current theme is <strong><?php echo esc_html( get_stylesheet() ); ?></strong>
+            Current theme is <strong><?php echo esc_html( ucfirst( get_stylesheet() ) ); ?></strong>
         </p>
     </div>
 
