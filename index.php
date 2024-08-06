@@ -28,6 +28,8 @@
 
     </title>
 
+
+    <!--suppress CssInvalidPropertyValue, CssUnusedSymbol -->
     <style>
 
         /* custom properties declaration */
@@ -63,13 +65,27 @@
             }
         }
 
-        p {
-            max-width: 60ch;
+        body {
+            max-width: clamp(320px, 90%, 1000px);
+            margin: auto;
+
+            font-size: 1.25rem;
             line-height: 1.5;
+
+            accent-color: var(--season-color);
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            max-width: 65ch;
         }
 
         h1, h2, h3, h4, h5, h6 {
             color: var(--season-color);
+            text-wrap: balance;
         }
 
         a {
@@ -82,6 +98,18 @@
             margin-block-start: 0.5rem;
         }
 
+        figure.wp-block-image {
+            margin: 0;
+        }
+
+        @media (prefers-reduced-motion) {
+            *, *::before, *::after {
+                animation-duration: 0s !important;
+                /* additional recommendation */
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
 
 </head>
