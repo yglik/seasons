@@ -110,6 +110,15 @@
                 scroll-behavior: auto !important;
             }
         }
+
+        :where(body:has(input[name="hebrew"]:not(:checked)) .internationalized[lang="he"]) {
+            display: none;
+        }
+
+        :where(body:has(input[name="english"]:not(:checked)) .internationalized[lang="en"]) {
+            display: none;
+        }
+
     </style>
 
 </head>
@@ -169,7 +178,7 @@
 
     <hr>
 
-    <div>
+    <div class="internationalized" lang="he">
         <p>
             מונע בגאווה על ידי <a href="https://wordpress.org/">וורדפרס</a>
         </p>
@@ -181,7 +190,7 @@
         </p>
     </div>
 
-    <div lang="en" dir="ltr">
+    <div class="internationalized" lang="en" dir="ltr">
         <p>
             Proudly powered by <a href="https://wordpress.org/">WordPress</a>.
         </p>
@@ -192,6 +201,18 @@
             Current theme is <strong><?php echo esc_html( ucfirst( get_stylesheet() ) ); ?></strong>
         </p>
     </div>
+
+    <hr>
+
+    <form id="settings">
+
+        <label for="hebrew">עברית</label>
+        <input type="checkbox" name="hebrew" id="hebrew" checked>
+
+        <label for="english">English</label>
+        <input type="checkbox" name="english" id="english">
+
+    </form>
 
 </footer>
 
