@@ -156,9 +156,19 @@
 	<?php endif; ?>
 
 </header>
-
+<?php
+$content_has_h1_tag = ( new WP_HTML_Tag_Processor( get_the_content() ) )->next_tag( 'h1' );
+?>
 <main>
+
+	<?php if ( ! $content_has_h1_tag ): ?>
+
+        <h1><?php the_title() ?></h1>
+
+	<?php endif; ?>
+
 	<?php the_content(); ?>
+
 </main>
 
 <footer>
