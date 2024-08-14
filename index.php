@@ -129,7 +129,7 @@
 
 	<?php
 
-	$pages = get_pages();
+	$pages = get_pages( [ 'sort_column' => 'menu_order' ] );
 	if ( ! empty( $pages ) ) :?>
 
         <h2><?php bloginfo( 'name' ); ?></h2>
