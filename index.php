@@ -102,6 +102,10 @@
             margin: 0;
         }
 
+        pre, code {
+            direction: ltr;
+        }
+
         @media (prefers-reduced-motion) {
             *, *::before, *::after {
                 animation-duration: 0s !important;
