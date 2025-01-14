@@ -49,7 +49,7 @@
 
             }
 
-            --season-color: var(--autumn-color);
+            --season-color: var(--winter-color);
 
         }
 
@@ -200,7 +200,8 @@ $content_has_h1_tag = ( new WP_HTML_Tag_Processor( get_the_content() ) )->next_t
             הזכויות שמורות.
         </p>
         <p>
-            האתר משתמש בתבנית <strong><?php echo esc_html( __( ucfirst( get_stylesheet() ), 'seasons' ) ); ?></strong>.
+            האתר משתמש במוטיב <strong><?php echo esc_html( __( ucfirst( get_stylesheet() ), 'seasons' ) ); ?></strong>.
+            ב-25.09.2024 האתר עבר לעונת הסתיו.
         </p>
     </div>
 
@@ -212,7 +213,8 @@ $content_has_h1_tag = ( new WP_HTML_Tag_Processor( get_the_content() ) )->next_t
             All contents of this site, unless otherwise noted, are ©2023-2024 Yochai and Adi Glik. All Rights Reserved.
         </p>
         <p>
-            Current theme is <strong><?php echo esc_html( ucfirst( get_stylesheet() ) ); ?></strong>
+            Current theme is <strong><?php echo esc_html( ucfirst( get_stylesheet() ) ); ?></strong>.
+            in 25.09.2024 the site transitioned to Autumn season.
         </p>
     </div>
 
