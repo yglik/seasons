@@ -49,7 +49,7 @@
 
             }
 
-            --season-color: var(--winter-color);
+            --season-color: var(--summer-color);
 
         }
 
